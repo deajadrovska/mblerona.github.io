@@ -1,0 +1,849 @@
+body {
+    background-color: #cccccc;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-behavior: smooth;
+    /*background: linear-gradient(to right, #B2BDCB, #728CA3);*/
+}
+
+/*-----NAV---*/
+nav {
+    /*background-color: red;*/
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    /*width: 100%;*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.logo {
+    font-weight: lighter;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: Papyrus;
+}
+
+ul {
+    list-style-type: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    display: flex;
+    margin-left: 240px;
+    font-family: Papyrus;
+}
+
+li {
+    margin-left: 10px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    /*list-style-type: square;*/
+}
+
+@font-face {
+    font-family: 'romelano';
+    src: url('fonts/Romelano_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /*transition: all 0.3s ease;*/
+}
+
+a:hover {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    opacity: 1;
+}
+
+
+/*-----HOME---*/
+#home {
+    /*background: linear-gradient(180turn, #ffffff, #7e91f1, #010723);*/
+    background: url(final/backHome.jpg);
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    color: #c9c9ca;
+
+}
+
+.content {
+    /*position:relative;*/
+    padding: 14% 0 0;
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 6s;
+    /*background: url("images/bl.jpg");*/
+    /*width: 100%;*/
+}
+
+#home .layer {
+    height: 730px;
+    background: rgba(147, 146, 146, 0.47) fixed;
+    /*width: 100%;*/
+}
+
+.header_home {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 67px;
+    margin-top: 118px;
+    letter-spacing: 12px;
+
+}
+
+#home > div > div > p {
+    font-weight: lighter;
+    color: #f3f3f3;
+    font-size: 22px;
+    margin-left: 60px;
+    margin-top: -29px;
+    letter-spacing: 2px;
+}
+
+.iconish {
+    animation-name: fade;
+    animation-duration: 11s;
+}
+
+.fa-home {
+    margin-top: 160px;
+    font-style: italic;
+    animation: bounce2 2s ease infinite;
+    color: white;
+}
+
+.fa-home, span {
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.biographyDiv {
+    background-color: #cccccc;
+    height: 700px;
+
+
+    padding-bottom: 150px;
+
+}
+
+.bioPic {
+    height: 520px;
+    width: 400px;
+    /*background-color: #ae7272;*/
+    background: url("final/me2.jpg ") no-repeat;
+    position: absolute;
+    margin-top: 180px;
+    opacity: 0.8;
+    border-radius: 55px;
+    margin-left: 70px;
+
+}
+
+.dinone {
+    display: none;
+}
+
+.BioTextContent {
+
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 192px;
+
+}
+
+.bioHeader {
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0.7;
+    border-bottom: 1px solid white;
+    text-shadow: 2px 3px 2px gray;
+    /*background-color: #b8b5b3;*/
+
+}
+
+.bioCard {
+    height: 400px;
+    width: 450px;
+    /*background: url("final/content.png");*/
+    background-color: #b8b5b3;
+    margin-right: 50px;
+    opacity: 0.8;
+}
+
+.bioText1 {
+
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: -50px;
+    opacity: 1;
+    text-shadow: 2px 3px 2px gray;
+    /*background-color: #b8b5b3;*/
+}
+
+.bioText2 {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: 50px;
+    text-shadow: 2px 3px 2px gray;
+}
+
+
+
+.hobbiesDiv {
+    background: url("final/Untitled.png") no-repeat;
+    height: 1500px;
+    width: 100%;
+    margin-top: -100px;
+
+}
+
+#photography {
+    background: url(final/photography.png);
+    height: 330px;
+    width: 299px;
+    position: absolute;
+    margin-top: 412px;
+    margin-left: 109px;
+    rotate: 10grad;
+    border-radius: 15px;
+}
+
+#reading {
+    background: url(final/reading.png);
+    height: 330px;
+    width: 299px;
+    position: absolute;
+    margin-top: 327px;
+    margin-left: 572px;
+    rotate: -18grad;
+    border-radius: 15px;
+}
+
+#music {
+    background: url(final/music.png) no-repeat;
+    height: 325px;
+    width: 332px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 939px;
+    rotate: 9grad;
+    border-radius: 25px;
+}
+
+#art {
+    background: url("final/art.png");
+    height: 373px;
+    width: 303px;
+    position: absolute;
+    margin-top: 912px;
+    margin-left: 309px;
+    rotate: -15grad;
+    border-radius: 15px;
+}
+
+#puzzles {
+    background: url("final/puzzle.png") no-repeat;
+    height: 339px;
+    width: 298px;
+    position: absolute;
+    margin-top: 1070px;
+    margin-left: 809px;
+    rotate: 15grad;
+    border-radius: 15px;
+}
+
+
+.Aheader{
+font-size:18px;
+}
+
+.aText{
+    height:100%;
+    width: 700px;
+    /*background-color: red;*/
+    /*border: 2px solid black;*/
+margin:auto;
+
+}
+
+.aboutText{
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    text-align: justify;
+}
+body > div > div:nth-child(7) > h3{
+margin-top: 150px;
+}
+.horizontal {
+    width:900px;
+}
+
+
+
+.recent {
+    height: 700px;
+
+}
+
+.rText {
+    background: #cccccc;
+    height: 50px;
+    position: absolute;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 430px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+#home > div > div > div > i > span{
+    font-size: 10px;
+    font-family: "Times New Roman";
+}
+
+
+.HEADER {
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: lighter;
+
+    font-size: 40px;
+    background-color: #cccccc;
+    text-transform: uppercase;
+    font-family: emoji;
+    margin-left: 30px;
+    margin-top: 60px;
+    /*height:760px;*/
+}
+.recent{
+    /*background-color: red;*/
+    height:1000px;
+}
+
+.slideshow{
+    /*background-color: green;*/
+    background:url("final/Gallery2.jpg")no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width:100%;
+    position: absolute;
+    margin-top: 150px;
+}
+
+/*SLIDESHOW*/
+
+
+/* Slideshow container */
+.slideshow{
+
+}
+.slideshow-container {
+    max-width: 600px;
+    max-height:450px;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 5.6s ease;
+    margin-top: 90px;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+
+/*END*/
+body > div > hr:nth-child(8){
+    margin-bottom: 300px;
+}
+
+.contactDiv{
+    height: 500px;
+    /*background: url("final/ccbg.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+}
+
+body > div > div:nth-child(11) > h3{
+    margin-top:200px;
+}
+/*css contact*/
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Lusitana:400,700');
+
+/* Helpers */
+
+section {
+    border: 1px solid #dddbdb;
+    box-shadow: 26px 18px 27px #5D4F43;
+    /*background-color: red;*/
+    width: 50%;
+    height: 300px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    padding: 10px;
+    /*background-color: green;*/
+}
+
+.rightDiv {
+    width: 40%;
+    float: left;
+    /*background: url("final/phone.jpg")no-repeat;*/
+    height: 400px;
+    border-radius: 10px;
+    /*margin-right: 20px;*/
+    margin-top: 100px;
+    /*background-color: red;*/
+    margin-left: 20px;
+
+}
+
+.contactTxt2 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 20px;
+    /*margin-top: 118px;*/
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+.contactTxt1 {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 25px;
+    /*margin-top: 118px;*/
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* Grid */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin: -20px 0;
+}
+
+.col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.col.x-50 {
+    width: 50%;
+}
+
+.col.x-100 {
+    width: 100%;
+}
+
+.content-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.get-in-touch .title {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 48px;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #a0a0a0;
+    font-family: 'Lusitana', serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+input {
+    background-color: #cccccc;
+
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .input-text:hover + .label,
+.contact-form .input-text.not-empty + .label {
+    /*transform: translateY(-24px);*/
+}
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: 'Lusitana', serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    /*transition: transform 0.2s ease-in-out;*/
+
+}
+
+.input-text {
+    /*box-shadow: 1px 1px 1px #595959;*/
+}
+
+.contact-form .submit-btn {
+    display: inline-block;
+    /*HERE*/
+    background-color: #8d8b8b;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lusitana', serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.note .link {
+    color: #888;
+    text-decoration: none;
+}
+
+.note .link:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    box-shadow: 4px 6px 0px rgba(55, 22, 22, 0.67);
+    transform: translateY(-0.4em);
+}
+
+.submit-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.Footer {
+    height: 60px;
+    background-color: gray;
+}
+
+
+/*ICONS*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: absolute;*/
+    inset: 0;
+}
+
+.Section {
+    background-color: #8d8d8d;
+    color: #fff;
+    height: 36px;
+    width: 100%;
+    margin: 0px 7px 0px;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    /*padding: 10px;*/
+    aspect-ratio: 1 / 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+body > div > div.contactDiv > div > div > a > div {
+    border-radius: 200px;
+}
+
+.Section:hover {
+    box-shadow: 4px 6px 0px rgba(55, 22, 22, 0.67);
+    transform: translateY(-0.4em);
+    transition: all 0.3s ease;
+}
+
+.Section::after {
+    content: attr(tooltip);
+    margin-left: 10px;
+    padding: -10px;
+}
+
+
+/**/
+.facebook:hover {
+    background: #3b5998;
+}
+
+.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.youtube:hover {
+    background: #cd201f;
+}
+
+.twitter:hover {
+    background: #55acee;
+}
+
+.codepen:hover {
+    background: #333;
+}
+
+
+/*NEW ANIMATED FORM*/
+
+/* Input container */
+
+input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+}
+
+label{
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: floralwhite;
+    transition: all 0.3s ease;
+}
+
+input:focus + label {
+    top: -20px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+input:focus + label + .input-highlight {
+    width: 100%;
+}
+
+.input-highlight{
+    /*margin-left: 10px;*/
+}
+
+
+.rightDiv a{
+    margin: 10px;}
+
+
+footer{
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+.footerish{
+    text-align: center;
+    color: #716b6b;
+}
