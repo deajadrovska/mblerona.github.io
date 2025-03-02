@@ -1,5 +1,5 @@
 body {
-    background-color: #cccccc;
+    background-color: #ffcf02;
     /*margin: 0;*/
     /*padding: 0;*/
     font-family: Arial, sans-serif;
@@ -94,7 +94,7 @@ a:hover {
 
 #home .layer {
     height: 730px;
-    background: rgba(147, 146, 146, 0.47) fixed;
+    background: rgba(147, 147, 146, 0.47) fixed;
     /*width: 100%;*/
 }
 
